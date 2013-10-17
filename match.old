@@ -1,0 +1,38 @@
+<?php
+	header('Content-Type: text/cache-manifest');
+    include('database.php');
+    $chords = mysql_fetch_array(mysql_query('SELECT COUNT(*) as qtd FROM chords'));
+?>
+CACHE MANIFEST
+
+# 2013-09-21 v1.6
+<?php
+	echo '# QTD CIFRAS: '.$chords['qtd'];
+?>
+
+CACHE:
+index.php
+css/jquery.mobile.css
+css/jquery.transposer.css
+css/css.css
+css/add2home.css
+favicon.ico
+js/jquery.js
+js/add2home.js
+js/jquery.mobile.js
+js/jquery.transposer.js
+js/jquery-1.10.2.min.map
+js/js.js
+images/musica.png
+images/ajax-loader.gif
+images/icons-18-black.png
+images/icons-18-white.png
+images/icons-36-black.png
+images/icons-36-white.png
+images/logo_cifra_app_128x128.png
+
+SETTINGS:
+prefer-online
+
+NETWORK:
+*
