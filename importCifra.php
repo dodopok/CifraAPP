@@ -1,5 +1,5 @@
 <?php
-	include 'database.php';
+	include 'include/database.php';
 	function retiraAcentos($texto) 
 	{ 
 		$array1 = array( "á", "à", "â", "ã", "ä", "é", "è", "ê", "ë", "í", "ì", "î", "ï", "ó", "ò", "ô", "õ", "ö", "ú", "ù", "û", "ü", "ç" 

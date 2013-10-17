@@ -1,5 +1,5 @@
 <?php 
-    include('database.php');
+    include('include/database.php');
     $chords = mysql_query('SELECT id, artist, title FROM chords ORDER BY artist');
 ?>
 <!DOCTYPE html> 
