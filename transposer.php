@@ -89,14 +89,14 @@ class Transposer
 		}
 		else 
 		{
-			user_error("Invalid note '$note'");
+			user_error("Nota inválida '$note'");
 			return false;
 		}
 		$ixNew = $ix + $steps;
 		if(!isset($this->notes[$types][$ixNew])) {
 			$ixNew += ($ixNew > 0) ? -12 : 12;
 			if(!isset($this->notes[$types][$ixNew]))
-				throw new Exception("My math skills suck! $note : $steps : $ix : $ixNew");
+				throw new Exception("Erro ao realizar transpose de $note : $steps : $ix : $ixNew");
 		}
 		array_push($this->replacementChords,$this->notes[$types][$ixNew]);
 		//echo "/|".$note."|/";	
